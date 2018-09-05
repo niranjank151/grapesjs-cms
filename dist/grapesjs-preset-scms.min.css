@@ -1,0 +1,40 @@
+.gjs-dashed .scms-editable {
+    border-top-width: 1px;
+    border-right-width: 1px;
+    border-bottom-width: 1px;
+    border-left-width: 1px;
+    border-top-style: dashed;
+    border-right-style: dashed;
+    border-bottom-style: dashed;
+    border-left-style: dashed;
+    border-top-color: lightskyblue;
+    border-right-color: lightskyblue;
+    border-bottom-color: lightskyblue;
+    border-left-color: lightskyblue;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+}
+
+.scms-editable {
+    min-height: 50px;
+}
+
+.logo path {
+    pointer-events: none;
+    fill: none;
+    stroke-linecap: round;
+    stroke-width: 7;
+    stroke: rgb(255, 255, 255);
+}
+
+.description {
+    text-align: justify;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.gjs-one-bg{background-color:#463a3c}.gjs-one-color{color:#463a3c}.gjs-one-color-h:hover{color:#463a3c}.gjs-two-bg{background-color:#b9a5a6}.gjs-two-color{color:#b9a5a6}.gjs-two-color-h:hover{color:#b9a5a6}.gjs-three-bg{background-color:#804f7b}.gjs-three-color{color:#804f7b}.gjs-three-color-h:hover{color:#804f7b}.gjs-four-bg{background-color:#d97aa6}.gjs-four-color{color:#d97aa6}.gjs-four-color-h:hover{color:#d97aa6}

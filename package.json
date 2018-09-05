@@ -1,0 +1,41 @@
+{
+  "name": "grapesjs-preset-scms",
+  "version": "0.1.1",
+  "description": "GrapesJS Plugin SCMS Preset",
+  "main": "dist/grapesjs-preset-scms.min.js",
+  "scripts": {
+    "lint": "eslint src",
+    "v:patch": "npm version --no-git-tag-version patch",
+    "build": "npm run v:patch && webpack --env.production && npm run build:css",
+    "start": "webpack-dev-server --open --progress --colors & npm run build:css -- -w",
+    "build:css": "node-sass src/style/main.scss dist/grapesjs-preset-scms.min.css --output-style compressed"
+  },
+  "author": "Christoph Lange",
+  "babel": {
+    "presets": [
+      "env"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
+  },
+  "peerDependencies": {
+    "grapesjs": "0.x"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.19.1",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.8.3",
+    "webpack": "^3.11.0",
+    "webpack-dev-server": "^2.11.2"
+  },
+  "dependencies": {
+    "grapesjs-blocks-basic": "^0.1.7",
+    "grapesjs-server-component": "eth4n/grapesjs-server-component",
+    "grapesjs-editable-area": "eth4n/grapesjs-editable-area"
+  }
+}
